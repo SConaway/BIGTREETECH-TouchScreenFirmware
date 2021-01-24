@@ -85,14 +85,14 @@
 /**
  * show banner text at the top of the TFT in Marlin Mode.
  */
-#define MARLIN_SHOW_BANNER  true //to enabled: true | to disabled: false
+#define MARLIN_SHOW_BANNER  false //to enabled: true | to disabled: false
 /**
  * Run Marlin Mode in Fullscreen
  *
  * Options:  0: Disabled. RECOMMENDED FOR TFT24
  *           1: Enabled Marlin Fullscreen mode.
  */
-#define DEFAULT_ST7920_FULLSCREEN_MODE 0 // 0: Disabled. RECOMMENDED FOR TFT24
+#define DEFAULT_ST7920_FULLSCREEN_MODE 1 // 0: Disabled. RECOMMENDED FOR TFT24
 
 /**
  * Keep Serial always On (ONLY SUPPORTED ON TFT24 V1.1, TFT35 V3.0, AND TFT28 V3.0)
@@ -103,7 +103,7 @@
  *
  * Options:  0: Disabled    1: Enabled
  */
-#define SERIAL_ALWAYS_ON 0  // Default: 0 (Disabled)
+#define SERIAL_ALWAYS_ON 1  // Default: 0 (Disabled)
 
 //===========================================================================
 //========================== Touch Mode Settings ============================
@@ -138,7 +138,7 @@
 /**
  * Show bootscreen when starting up
  */
-#define SHOW_BTT_BOOTSCREEN
+// #define SHOW_BTT_BOOTSCREEN
 
 /**
  * The duration and frequency for the UI feedback sound.
@@ -195,10 +195,10 @@
 #define MIXING_EXTRUDER 0 // set default 0, for mixing_extruder 1 (this option turns off autodetection of the number of extruders)
 
 #define PREHEAT_LABELS   {"PLA", "PETG", "ABS", "WOOD", "TPU", "NYLON"}
-#define PREHEAT_HOTEND   {200,   240,    230,   170,    220,   250}
+#define PREHEAT_HOTEND   {180,   240,    230,   170,    220,   250}
 #define PREHEAT_BED      {60,    70,     90,    50,     50,    90}
 
-#define HEAT_MAX_TEMP    {275,       275,       275,       275,       275,       275,       150,    60}   //max temperature can be set
+#define HEAT_MAX_TEMP    {275,       275,       275,       275,       275,       275,       125,    60}   //max temperature can be set
 #define HEAT_SIGN_ID     {"T0:",     "T1:",     "T2:",     "T3:",     "T4:",     "T5:",     "B:",   "C:"}
 #define HEAT_DISPLAY_ID  {"T0",      "T1",      "T2",      "T3",      "T4",      "T5",      "Bed",  "Chamber"}
 #define HEAT_CMD         {"M104 T0", "M104 T1", "M104 T2", "M104 T3", "M104 T4", "M104 T5", "M140", "M141"};
@@ -219,7 +219,7 @@
 #define FAN_MAX_PWM      {       255,       255,       255,       255,       255,       255,       255,       255 };
 #define FAN_DISPLAY_ID   {      "F0",      "F1",      "F2",      "F3",      "F4",      "F5",     "CtL",     "CtI" };
 #define FAN_CMD          { "M106 P0", "M106 P1", "M106 P2", "M106 P3", "M106 P4", "M106 P5",    "M710",    "M710" };
-#define FAN_TYPE         {         0,         0,         0,         0,         0,         0,         1,         2 };
+#define FAN_TYPE         {         0,         1,         0,         0,         0,         0,         1,         2 };
 
 #define SPEED_ID         {"Sp.", "Fr."}
 
@@ -239,9 +239,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 235
-#define Y_MAX_POS 235
-#define Z_MAX_POS 250
+#define X_MAX_POS 220
+#define Y_MAX_POS 220
+#define Z_MAX_POS 300
 
 // Specify a pause position as { X, Y, Z_raise }
 #define NOZZLE_PAUSE_RETRACT_LENGTH 15   // (mm)
@@ -274,7 +274,7 @@
  *
  * Options:  0: Disabled    1: Enabled
  */
-#define AUTO_SAVE_LOAD_BL_VALUE 1
+#define AUTO_SAVE_LOAD_BL_VALUE 0
 
 /**
  * Enable Bed Leveling options
