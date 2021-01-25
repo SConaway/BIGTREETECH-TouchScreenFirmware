@@ -86,7 +86,7 @@
  *         12: DARKBLUE,  13: DARKGREEN,  14: GRAY,   15: DARKGRAY
  */
 #define MARLIN_BKCOLOR 1 // Default: 1
-#define MARLIN_FNCOLOR 0 // Default: 0
+#define MARLIN_FNCOLOR 4 // Default: 0
 
 // Text displayed at the top of the TFT in Marlin Mode.
 #define MARLIN_BANNER_TEXT "LCD12864 Emulator"  // Default: "LCD12864 Emulator"
@@ -276,7 +276,7 @@
  *
  * Options:  0: Disabled    1: Enabled
  */
-#define AUTO_SAVE_LOAD_BL_VALUE 1 // Default: 1
+#define AUTO_SAVE_LOAD_BL_VALUE 0 // Default: 1
 
 // PID autotune
 #define PID_CMD {"M303 U1 C8 E0", "M303 U1 C8 E1", "M303 U1 C8 E2", "M303 U1 C8 E3", "M303 U1 C8 E4", "M303 U1 C8 E5", "M303 U1 C8 E-1", ""};
@@ -302,7 +302,7 @@
 //===========================================================================
 
 // Show bootscreen when starting up
-#define SHOW_BTT_BOOTSCREEN
+// #define SHOW_BTT_BOOTSCREEN
 
 // Enable alternative Move Menu Buttons Layout matching the direction of actual printer axis.
 // update the icons from alternate icon folder
@@ -342,7 +342,7 @@
  *           9: 80 Percent,  10: 90 Percent, 11: 100 Percent
  */
 #define DEFAULT_LCD_BRIGHTNESS       11  // Default: 11
-#define DEFAULT_LCD_IDLE_BRIGHTNESS   3  // Default: 3
+#define DEFAULT_LCD_IDLE_BRIGHTNESS   2  // Default: 3
 
 /**
  * Idle LCD diming Timer (TFT28 V3.0, TFT35 E3.0, TFT43 V3.0, TFT50 V3.0 & TFT70 V3.0)
